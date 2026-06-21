@@ -1,0 +1,259 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0d0d0d;
+    color:white;
+    font-family:'Poppins',sans-serif;
+}
+
+/* NAVBAR */
+
+.navbar{
+    height:90px;
+    background:#111;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 80px;
+}
+
+.logo{
+    font-family:'Anton',sans-serif;
+    font-size:2rem;
+}
+
+.menu{
+    display:flex;
+    gap:40px;
+    list-style:none;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.menu a:hover{
+    color:#ff3131;
+}
+
+/* BANNER */
+
+.banner{
+    height:65vh;
+
+    background:url("../banner-acessorios.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    position:relative;
+
+    display:flex;
+    align-items:center;
+
+    padding-left:100px;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+
+    background:rgba(0,0,0,.65);
+}
+
+.banner-texto{
+    position:relative;
+    z-index:2;
+}
+
+.banner-texto p{
+    color:#ff3131;
+    letter-spacing:3px;
+}
+
+.banner-texto h1{
+    font-family:'Anton',sans-serif;
+    font-size:5rem;
+    line-height:80px;
+    margin:20px 0;
+}
+
+.btn{
+    background:#ff3131;
+    color:white;
+
+    text-decoration:none;
+
+    padding:15px 40px;
+
+    border-radius:40px;
+}
+
+/* CATEGORIAS */
+
+.categorias{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+
+    padding:50px;
+}
+
+.categorias button{
+    background:#1d1d1d;
+    color:white;
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.categorias button:hover{
+    background:#ff3131;
+}
+
+/* PRODUTOS */
+
+.produtos{
+    padding:0 5% 80px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+}
+
+.card{
+    background:#151515;
+
+    padding:25px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:0 0 25px rgba(255,49,49,.25);
+}
+
+.card img{
+    width:100%;
+    height:260px;
+
+    object-fit:contain;
+}
+
+.card h3{
+    margin-top:15px;
+}
+
+.card span{
+    display:block;
+
+    color:#ff3131;
+
+    font-size:1.2rem;
+
+    font-weight:bold;
+
+    margin:15px 0;
+}
+
+.card button{
+    width:100%;
+
+    border:none;
+
+    background:#ff3131;
+
+    color:white;
+
+    padding:12px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+}
+
+/* VANTAGENS */
+
+.vantagens{
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+    padding:80px 5%;
+}
+
+.vantagem{
+    background:#151515;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    padding:30px;
+
+    font-size:2rem;
+}
+
+.vantagem h3{
+    margin-top:15px;
+    font-size:1.1rem;
+}
+
+/* FOOTER */
+
+footer{
+    background:#111;
+
+    text-align:center;
+
+    padding:30px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+    .navbar{
+        padding:0 20px;
+    }
+
+    .menu{
+        display:none;
+    }
+
+    .banner{
+        padding-left:30px;
+    }
+
+    .banner-texto h1{
+        font-size:3rem;
+        line-height:50px;
+    }
+
+}

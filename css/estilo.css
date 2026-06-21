@@ -1,0 +1,534 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.produtos{
+    display: flex;
+    gap: 77px;
+}
+
+.tituloindex{
+    text-align: center;
+    font-family: serif;
+}
+
+
+.produtos{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card{
+    background-color: #d1d1d1;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card p{
+    font-size: 25px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+#fim {
+    font-size: 26px;
+    font-family: serif;
+}
+
+#inicial {
+    background-color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #61848a; /* Mantendo o fundo azul das suas imagens anteriores */
+}
+
+/* Container que alinha os Filtros e o Produto lado a lado */
+.container-conteudo {
+  display: flex;
+  align-items: flex-start;
+  padding: 30px;
+  gap: 50px; /* Espaço ideal entre o menu e o produto */
+}
+
+/* Sidebar lateral ajustada */
+.filtrobox {
+  width: 250px; /* Largura suficiente para o menu respirar */
+  background: transparent; /* Deixa o fundo azul do body aparecer */
+  flex-shrink: 0;
+}
+
+/* Blocos de filtro */
+.filtro {
+  margin-bottom: 30px;
+}
+
+/* Títulos */
+.titulo {
+  font-size: 25px;
+  margin-bottom: 15px;
+  color: #111;
+  font-weight: bold;
+}
+
+/* Pesquisa */
+.search-box {
+  margin-bottom: 15px;
+}
+
+.search-box input {
+  width: 100%; /* Ocupa toda a largura do menu lateral (250px) */
+  height: 42px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 12px;
+  font-size: 15px;
+  outline: none;
+  background: white;
+  box-sizing: border-box; /* Evita que o padding quebre o tamanho do input */
+}
+
+/* Lista marcas */
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  color: #111;
+  cursor: pointer;
+}
+
+/* Tamanhos */
+.tamanhos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 120px;
+}
+
+/* Botões de tamanho */
+.tam {
+  width: 50px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 15px;
+}
+
+.tam:hover {
+  background: black;
+  color: white;
+  border-color: black;
+}
+
+/* Área da imagem na DIREITA */
+.produtotenis {
+  flex-grow: 1; /* Ocupa todo o resto do espaço na direita */
+  justify-content: flex-start; /* Alinha o produto logo após o espaço do menu */
+}
+
+.produtotenis img {
+  max-width: 100%; /* Impede a imagem de quebrar a tela se for muito grande */
+  height: auto;
+}
+
+#fotoUm {
+  width: 100%;
+  height: 600px;
+}
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #0f0f0f;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/* NAVBAR */
+
+.navbar{
+    width: 100%;
+    height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 80px;
+
+    background: #111;
+
+    border-bottom: 2px solid #1f1f1f;
+}
+
+.logo{
+    font-family: 'Anton', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 2px;
+
+    color: white;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    color: #ff3c3c;
+}
+
+.icons{
+    font-size: 1.5rem;
+
+    display: flex;
+    gap: 20px;
+
+    cursor: pointer;
+}
+
+
+/* BANNER */
+
+.banner{
+    width: 100%;
+    height: 88vh;
+
+    background-image: url("../fotoUm_2.png");
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 80px;
+
+    overflow: hidden;
+}
+
+.overlay{
+    position: absolute;
+
+    inset: 0;
+
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,9.92),
+        rgba(0,0,0,.89),
+        rgba(0,0,0,0.2)
+    );
+}
+
+.banner-texto{
+    position: relative;
+    z-index: 2;
+
+    max-width: 520px;
+}
+
+.mini-texto{
+    color: #ff3b3b;
+
+}
+
+.banner-texto h1{
+    font-family: 'Anton', sans-serif;
+
+    font-size: 4.5rem;
+
+    line-height: 85px;
+
+    margin-bottom: 25px;
+
+  
+}
+
+.descricao{
+    font-size: 1.1rem;
+
+    color: #d0d0d0;
+
+    line-height: 32px;
+
+    margin-bottom: 40px;
+}
+
+.btn{
+    display: inline-block;
+
+    padding: 16px 42px;
+
+    background: #ff3131;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 50px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn:hover{
+    transform: translateY(-4px);
+
+    background: #ff0000;
+
+    box-shadow: 0 0 25px rgba(255,0,0,0.5);
+}
+
+/* CATEGORIAS */
+
+.categorias{
+    padding: 80px 50px;
+}
+
+
+.produtos{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 35px;
+}
+
+.card{
+    background: #1a1a1a;
+
+    border-radius: 25px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    transition: 0.4s;
+
+    border: 1px solid transparent;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+
+    border: 1px solid #34145e;
+
+    box-shadow: 0 0 25px rgba(107, 213, 255, 0.25);
+}
+
+.card img{
+    width: 100%;
+    height: 250px;
+
+    object-fit: contain;
+
+    margin-bottom: 20px;
+}
+
+.card p{
+    font-size: 1.2rem;
+
+    font-weight: 600;
+}
+
+/* FOOTER */
+
+footer{
+    background: #111;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-top: 2px solid #1f1f1f;
+}
+
+
+/* RESPONSIVO */
+
+@media(max-width: 900px){
+
+    .navbar{
+        padding: 0 30px;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .banner{
+        padding-left: 40px;
+    }
+
+    .banner-texto h1{
+        font-size: 4rem;
+        line-height: 70px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* produtos destaques */
+.destaques{
+    padding: 80px 5%;
+}
+
+
+.produto{
+    background: #151515;
+
+    padding: 25px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    transition: .3s;
+}
+
+.produto:hover{
+
+    box-shadow: 0 0 25px rgba(255,0,0,.2);
+}
+
+.produto img{
+    width: 100%;
+    height: 250px;
+
+    object-fit: contain;
+}
+
+
+.produto button{
+    width: 100%;
+
+    background: #ff3131;
+
+    color: white;
+
+    padding: 12px;
+
+    border-radius: 12px;
+
+    font-weight: bold;
+
+    transition: .3s;
+}
+
+.produto button:hover{
+    background: #ff0000;
+}
+
+
+
+/* Email */
+
+.newsletter{
+    padding: 100px 5%;
+
+    text-align: center;
+}
+
+.newsletter p{
+    color: #d0d0d0;
+    margin-bottom: 30px;
+}
+
+.newsletter-box{
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+}
+
+.newsletter input{
+    width: 350px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 12px;
+}
+
+.newsletter button{
+    background: #ff3131;
+
+    color: white;
+
+    border: none;
+
+    padding: 15px 25px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+

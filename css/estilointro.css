@@ -1,0 +1,514 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #0a0a0a;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+
+.navbar{
+    height: 90px;
+
+    background: #111;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 80px;
+
+    border-bottom: 1px solid #222;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+.logo{
+    font-family: 'Anton', sans-serif;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.menu a:hover{
+    color: #ff3131;
+}
+
+.icons{
+    display: flex;
+    gap: 20px;
+    font-size: 1.4rem;
+}
+
+/* BANNER */
+
+.banner{
+    height: 90vh;
+
+    background-image: url("../fotoUm_2.png");
+
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 80px;
+}
+
+.overlay{
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,.9),
+        rgba(0,0,0,.6),
+        rgba(0,0,0,.2)
+    );
+}
+
+.banner-texto{
+    position: relative;
+    z-index: 2;
+
+    max-width: 650px;
+}
+
+.mini-texto{
+    color: #ff3131;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.banner-texto h1{
+    font-family: 'Anton', sans-serif;
+    font-size: 5rem;
+    line-height: 85px;
+    margin-bottom: 20px;
+}
+
+.banner-texto p{
+    color: #d0d0d0;
+    font-size: 1.2rem;
+    line-height: 35px;
+    margin-bottom: 35px;
+}
+
+.btn{
+    display: inline-block;
+
+    background: #ff3131;
+    color: white;
+
+    text-decoration: none;
+
+    padding: 15px 40px;
+
+    border-radius: 50px;
+
+    font-weight: bold;
+
+    transition: .3s;
+}
+
+.btn:hover{
+    transform: translateY(-4px);
+
+    background: #ff0000;
+
+    box-shadow: 0 0 25px rgba(255,0,0,.5);
+}
+
+/* TITULOS */
+
+section h2{
+    font-family: 'Anton', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+/* CATEGORIAS */
+
+.categorias{
+    padding: 80px 5%;
+}
+
+.grid-categorias{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+
+    gap: 30px;
+}
+
+.card{
+    background: #151515;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    padding: 25px;
+
+    transition: .4s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+
+    box-shadow: 0 0 25px rgba(255,0,0,.2);
+}
+
+.card img{
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+}
+
+.card p{
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* DESTAQUES */
+
+.destaques{
+    padding: 80px 5%;
+}
+
+.produtos{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+
+    gap: 30px;
+}
+
+.produto{
+    background: #151515;
+
+    padding: 25px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    transition: .3s;
+}
+
+.produto:hover{
+    transform: translateY(-10px);
+
+    box-shadow: 0 0 25px rgba(255,0,0,.2);
+}
+
+.produto img{
+    width: 100%;
+    height: 250px;
+
+    object-fit: contain;
+}
+
+.produto h3{
+    margin-top: 15px;
+}
+
+.produto span{
+    display: block;
+
+    color: #ff3131;
+
+    font-weight: bold;
+
+    font-size: 1.3rem;
+
+    margin: 15px 0;
+}
+
+.produto button{
+    width: 100%;
+
+    border: none;
+
+    background: #ff3131;
+
+    color: white;
+
+    padding: 12px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: .3s;
+}
+
+.produto button:hover{
+    background: #ff0000;
+}
+
+/* TIMES */
+
+.times{
+    padding: 80px 5%;
+}
+
+.times-grid{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+
+    gap: 25px;
+}
+
+.time{
+    background: #151515;
+
+    padding: 40px;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    transition: .3s;
+}
+
+.time:hover{
+    background: #1d1d1d;
+
+    transform: scale(1.04);
+}
+
+.time h3{
+    font-size: 1.5rem;
+}
+
+/* BENEFICIOS */
+
+.beneficios{
+    padding: 80px 5%;
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+
+    gap: 25px;
+}
+
+.beneficio{
+    background: #151515;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    font-size: 2rem;
+}
+
+.beneficio h3{
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+
+/* PROMOÇÃO */
+
+.promo{
+    margin: 80px 5%;
+
+    background: linear-gradient(
+        135deg,
+        #ff3131,
+        #a40000
+    );
+
+    border-radius: 30px;
+
+    text-align: center;
+
+    padding: 80px 30px;
+}
+
+.promo h2{
+    margin-bottom: 15px;
+}
+
+.promo p{
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn-promo{
+    background: white;
+
+    color: black;
+
+    text-decoration: none;
+
+    padding: 15px 40px;
+
+    border-radius: 50px;
+
+    font-weight: bold;
+}
+
+/* ESTATISTICAS */
+
+.estatisticas{
+    padding: 80px 5%;
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+
+    gap: 25px;
+
+    text-align: center;
+}
+
+.estatisticas h3{
+    color: #ff3131;
+
+    font-size: 3rem;
+}
+
+.estatisticas p{
+    color: #d0d0d0;
+}
+
+/* NEWSLETTER */
+
+.newsletter{
+    padding: 100px 5%;
+
+    text-align: center;
+}
+
+.newsletter p{
+    color: #d0d0d0;
+    margin-bottom: 30px;
+}
+
+.newsletter-box{
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+}
+
+.newsletter input{
+    width: 350px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 12px;
+}
+
+.newsletter button{
+    background: #ff3131;
+
+    color: white;
+
+    border: none;
+
+    padding: 15px 25px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top: 50px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    background: #111;
+
+    border-top: 1px solid #222;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:900px){
+
+    .navbar{
+        padding: 0 20px;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .banner{
+        padding-left: 30px;
+    }
+
+    .banner-texto h1{
+        font-size: 3.5rem;
+        line-height: 60px;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .banner{
+        height: 70vh;
+    }
+
+    .banner-texto h1{
+        font-size: 2.8rem;
+        line-height: 50px;
+    }
+
+    .banner-texto p{
+        font-size: 1rem;
+    }
+
+    section h2{
+        font-size: 2rem;
+    }
+
+}
